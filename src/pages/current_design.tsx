@@ -24,8 +24,8 @@ const CurrentDesign: React.FC = () => {
 
         {/* Description */}
         <div className="product-card">
-          <h2>OpenSCAD Frontend</h2>
           <div className="text-box">
+            <h2>OpenSCAD Frontend</h2>
             <p>
               We are leveraging OpenSCAD in order to digitally generate a visual
               representation of the coding blocks. On the left hand side of the
@@ -42,8 +42,8 @@ const CurrentDesign: React.FC = () => {
       <section className="product-grid">
         {/* Description */}
         <div className="product-card">
-          <h2>OpenSCAD Backend</h2>
           <div className="text-box">
+            <h2>OpenSCAD Backend</h2>
             <p>
               From the backend side, we are leveraging OpenSCAD in order to
               generate digital blocks. This means that with every time you
@@ -74,8 +74,8 @@ const CurrentDesign: React.FC = () => {
 
         {/* Description */}
         <div className="product-card">
-          <h2>The Blocks Design</h2>
           <div className="text-box">
+            <h2>The Blocks Design</h2>
             <p>
               In order to optimize accessibility to visually impaired students,
               we have implemented various design features. The integrated

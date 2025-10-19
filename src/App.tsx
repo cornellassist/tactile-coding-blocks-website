@@ -1,6 +1,6 @@
 // src/App.tsx
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Products from './pages/products';
 import CurrentDesign from './pages/current_design';
@@ -11,6 +11,8 @@ import logo from './images/logo.jpg';
 import './styles.css';
 
 function App() {
+  const location = useLocation();
+
   return (
     <>
       {/* Navbar (shared across all pages) */}
@@ -19,12 +21,24 @@ function App() {
           <img src={logo} alt="Company Logo" />
         </Link>
         <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/products">Our Products</Link>
-          <Link to="/current-design">Current Design</Link>
-          <Link to="/design-process">Design Process</Link>
-          <Link to="/why-us">Why Us</Link>
-          <Link to="/coming-soon">Coming Soon</Link>
+          <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+            Home
+          </Link>
+          <Link to="/products" className={location.pathname === '/products' ? 'active' : ''}>
+            Our Products
+          </Link>
+          <Link to="/current-design" className={location.pathname === '/current-design' ? 'active' : ''}>
+            Current Design
+          </Link>
+          <Link to="/design-process" className={location.pathname === '/design-process' ? 'active' : ''}>
+            Design Process
+          </Link>
+          <Link to="/why-us" className={location.pathname === '/why-us' ? 'active' : ''}>
+            Why Us
+          </Link>
+          <Link to="/coming-soon" className={location.pathname === '/coming-soon' ? 'active' : ''}>
+            Coming Soon
+          </Link>
         </nav>
       </header>
 

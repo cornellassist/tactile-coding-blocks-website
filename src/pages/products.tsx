@@ -24,7 +24,7 @@ const Products: React.FC = () => {
             <p>For you or your students to build!</p>
           </div>
           <a
-            href="http://localhost:3000" // Local ordering frontend
+            href="http://localhost:3000" // Local kit ordering frontend
             target="_blank"
             rel="noopener noreferrer"
             className="product-btn"
@@ -43,7 +43,9 @@ const Products: React.FC = () => {
             <p>So you can create yourself!</p>
           </div>
           <a
-            href="#" // Update later to your 3D Prints ordering page
+            href="http://localhost:3000" // Local 3D prints ordering frontend
+            target="_blank"
+            rel="noopener noreferrer"
             className="product-btn"
           >
             Click to order 3D Prints
