@@ -1,5 +1,5 @@
 // src/App.tsx
-import React from 'react';
+import { useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Products from './pages/products';
@@ -13,6 +13,16 @@ import './styles.css';
 function App() {
   const location = useLocation();
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       {/* Navbar (shared across all pages) */}
@@ -20,23 +30,31 @@ function App() {
         <Link to="/" className="logo">
           <img src={logo} alt="Company Logo" />
         </Link>
-        <nav className="nav-links">
-          <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+
+        {/* Hamburger Menu Button */}
+        <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          <Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>
             Home
           </Link>
-          <Link to="/products" className={location.pathname === '/products' ? 'active' : ''}>
+          <Link to="/products" className={location.pathname === '/products' ? 'active' : ''} onClick={closeMenu}>
             Our Products
           </Link>
-          <Link to="/current-design" className={location.pathname === '/current-design' ? 'active' : ''}>
+          <Link to="/current-design" className={location.pathname === '/current-design' ? 'active' : ''} onClick={closeMenu}>
             Current Design
           </Link>
-          <Link to="/design-process" className={location.pathname === '/design-process' ? 'active' : ''}>
+          <Link to="/design-process" className={location.pathname === '/design-process' ? 'active' : ''} onClick={closeMenu}>
             Design Process
           </Link>
-          <Link to="/why-us" className={location.pathname === '/why-us' ? 'active' : ''}>
+          <Link to="/why-us" className={location.pathname === '/why-us' ? 'active' : ''} onClick={closeMenu}>
             Why Us
           </Link>
-          <Link to="/coming-soon" className={location.pathname === '/coming-soon' ? 'active' : ''}>
+          <Link to="/coming-soon" className={location.pathname === '/coming-soon' ? 'active' : ''} onClick={closeMenu}>
             Coming Soon
           </Link>
         </nav>
