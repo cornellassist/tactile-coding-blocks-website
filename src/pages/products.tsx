@@ -24,7 +24,7 @@ const Products: React.FC = () => {
             <p>For you or your students to build!</p>
           </div>
           <a
-            href="http://localhost:3000" // Local kit ordering frontend
+            href="http://localhost:4000" // Local kit ordering frontend
             target="_blank"
             rel="noopener noreferrer"
             className="product-btn"

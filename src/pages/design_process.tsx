@@ -120,7 +120,7 @@ const DesignProcess: React.FC = () => {
       {/* February 2025 */}
       <section className="product-grid" id="feb2025">
         <div className="product-card">
-          <h2>Feb 2025</h2>
+          <h2>February 2025</h2>
           <div className="text-box">
             <p>Savaas started to lead the project within Cornell Assistive Technologies Project team, getting a lot more help, leading weekly work sessions, and spearheading the autogeneration portion.
               The team also met with Richard He to learn more about his braille generator project, and how he could incorporate a similar workflow to ours. Team memebers started learning OpenSCAD and quorum to make an algorithm to put the output block together. 
@@ -143,7 +143,7 @@ const DesignProcess: React.FC = () => {
             <img src={Island} alt="Island" />
           </div>        </div>
         <div className="product-card">
-          <h2>Aug 2025</h2>
+          <h2>August 2025</h2>
           <div className="text-box">
             <p>We have now started developing a website to showcase the entire tactile coding blocks project, as well as an ordering page.
               We also started having talks with blockly at Google and Micro:Bit at Microsoft to potentially collaborate and share our work further. 

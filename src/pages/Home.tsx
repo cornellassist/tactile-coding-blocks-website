@@ -7,7 +7,7 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="hero">
         <h1>Tactile Coding Blocks</h1>
-        <p>Make CS Accessible for Low Vision/Blind Learners</p>
+        <p>Make Computer Science Accessible for Low Vision/Blind Learners</p>
       </section>
 
       {/* Media Placeholder */}

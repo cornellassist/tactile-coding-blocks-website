@@ -14,19 +14,14 @@ const WhyUs: React.FC = () => {
       <section className="why-us-content">
         <div className="why-us-text">
           <h3>Our Motivation</h3>
-          <p>
-            <em>Existing tools are expensive ($500 sets)</em>
-          </p>
-          <p>Knowledge isn’t transferable to more advanced programming</p>
+          <p>Existing tools are expensive ($500 sets)</p>
+          <p>Knowledge isn't transferable to more advanced programming</p>
           <p>Advanced computing concepts are not taught</p>
 
           <h3>Perks of Our Solution</h3>
           <p>Cost - Less than $15 to manufacture</p>
           <p>Any coding language, anywhere</p>
-          <p>
-            Customization built-in from color scheme to coding language to
-            concepts
-          </p>
+          <p>Customization built-in from color scheme to coding language to concepts</p>
         </div>
 
         <div className="team-image">
@@ -36,17 +31,17 @@ const WhyUs: React.FC = () => {
 
       {/* Testimonials */}
       <section className="testimonials">
-        <div className="testimonial-card red-bg">
+        <div className="testimonial-card">
           <blockquote>
             "Using the blocks GREATLY simplifies the task at hand by initially
-            eliminating the technology load—navigation, time in listening to
+            eliminating the technology load-navigation, time in listening to
             what a screen reader is doing, zooming issues with a LV student,
             just starting up the laptop and the program. I love this as a first
-            step before the computer—even for tech capable students."
+            step before the computer —even for tech capable students."
           </blockquote>
         </div>
 
-        <div className="testimonial-card brown-bg">
+        <div className="testimonial-card">
           <blockquote>
             "I loved that they could emulate the block program they had just set
             up tactually with physical pieces into the coding environment in
@@ -55,7 +50,7 @@ const WhyUs: React.FC = () => {
           </blockquote>
         </div>
 
-        <div className="testimonial-card blue-bg">
+        <div className="testimonial-card">
           <blockquote>
             "I think the number of and concepts included in the blocks you sent
             was perfect. Students were able to work through the physical blocks
