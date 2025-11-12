@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css'; // Adjust path if needed
+import '../styles.css';
 import tactileBlocks from '../images/tactile_blocks.jpg';
 import digitalBrailleGenerator from '../images/digital_braille_generator.jpg';
 

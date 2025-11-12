@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css'; // Adjust the path if your CSS is elsewhere
+import '../styles.css';
 
 const Home: React.FC = () => {
   return (
