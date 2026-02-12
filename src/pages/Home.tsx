@@ -12,23 +12,33 @@ import h6 from '../images/h6.jpg';
 const Home: React.FC = () => {
   return (
     <div className="page">
-      {/* Hero Section */}
-      <section className="hero">
-        <h1>Tactile Coding Blocks</h1>
-        <p>Make Computer Science Accessible for Low Vision/Blind Learners</p>
-      </section>
 
+    {/* Hero Section */}
+    <section className="hero">
+      <div className="hero-content">
+        <div className="hero-subtitle-border">
+        <h1>Tactile Coding Blocks</h1>
+          <p className="hero-tagline">
+            Making computer science accessible for blind and low-vision learners through
+            hands-on, tactile programming tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+      {/* Collage Section */}
       <section className="collage-section">
         <div className="collage-grid">
-          <img src={h4} alt="Assembly in progress" />
-          <img src={h1} alt="Tactile block design detail" />
-          <img src={h2} alt="Braille integration detail" />
-          <img src={h3} alt="3D printing process" />
-          <img src={h5} alt="Completed tactile blocks" />
-          <img src={h6} alt="Classroom usage example" />
+          <img src={h4} alt="Assembly of tactile coding blocks in progress" />
+          <img src={h1} alt="Close-up of tactile coding block design" />
+          <img src={h2} alt="Braille integration on tactile blocks" />
+          <img src={h3} alt="3D printing process for tactile blocks" />
+          <img src={h5} alt="Completed tactile coding block set" />
+          <img src={h6} alt="Students using tactile coding blocks in classroom" />
         </div>
       </section>
-  </div>
+
+    </div>
   );
 };
 

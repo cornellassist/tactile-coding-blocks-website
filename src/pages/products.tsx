@@ -5,14 +5,6 @@ import '../styles.css';
 import tactileBlocks from '../images/tactile_blocks.jpg';
 import digitalBrailleGenerator from '../images/digital_braille_generator.jpg';
 
-// Collage images
-import h1 from '../images/h1.jpg';
-import h2 from '../images/h2.jpg';
-import h3 from '../images/h3.jpg';
-import h4 from '../images/h4.jpg';
-import h5 from '../images/h5.jpg';
-import h6 from '../images/h6.jpg';
-
 
 const Products: React.FC = () => {
   return (
@@ -60,17 +52,6 @@ const Products: React.FC = () => {
           >
             Click to order 3D Prints
           </a>
-        </div>
-      </section>
-
-      <section className="collage-section">
-        <div className="collage-grid">
-          <img src={h1} alt="Tactile block design detail" />
-          <img src={h2} alt="Braille integration detail" />
-          <img src={h3} alt="3D printing process" />
-          <img src={h4} alt="Assembly in progress" />
-          <img src={h5} alt="Completed tactile blocks" />
-          <img src={h6} alt="Classroom usage example" />
         </div>
       </section>
     </div>

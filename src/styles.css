@@ -188,10 +188,11 @@ body {
 }
 
 /* Hero Section - Modern & Bold */
+
 .hero {
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #d11a2a 0%, #8b0000 100%);
+  padding: 30px 20px;
+  background: #8B0000;
   color: white;
   position: relative;
   overflow: hidden;
@@ -200,10 +201,7 @@ body {
 .hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
   opacity: 0.3;
 }
@@ -211,21 +209,36 @@ body {
 .hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   position: relative;
   z-index: 1;
   animation: fadeInUp 0.8s ease-out;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  letter-spacing: 3px;
 }
 
 .hero p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.95);
   position: relative;
   z-index: 1;
   animation: fadeInUp 0.8s ease-out 0.2s both;
   font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
+
+/* White inset border around hero description */
+
+.hero-subtitle-border {
+  border: 5px solid white;
+  padding: 40px 40px;
+  border-radius: 6px;
+  margin: 40px;
+  width: calc(100% - 80px);
+  box-sizing: border-box;
+}
+
 
 @keyframes fadeInUp {
   from {
@@ -237,6 +250,33 @@ body {
     transform: translateY(0);
   }
 }
+
+/* ===================================================== */
+/* HOME COLLAGE SECTION                                  */
+/* ===================================================== */
+
+.collage-section {
+  padding: 20px 20px;
+  background: white;
+}
+
+.collage-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.collage-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+  background: white;
+}
+
 
 /* Media Placeholder */
 .media-placeholder {
@@ -937,30 +977,3 @@ html {
     height: 3px;
   }
 }
-
-/* ============================= */
-/* Vertical Collage (Clean)     */
-/* ============================= */
-
-.collage-section {
-  padding: 20px 20px;
-  background: white;
-}
-
-.collage-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* vertical stacking */
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.collage-grid img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0;          /* no curves */
-  box-shadow: none;          /* no floating feel */
-  background: white;
-}
-
