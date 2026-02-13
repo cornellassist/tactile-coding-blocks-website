@@ -7,11 +7,18 @@ import blockDesign from '../images/block_design.jpg';
 const CurrentDesign: React.FC = () => {
   return (
     <div className="page">
-      {/* Page Heading */}
-      <section className="products-header">
-        <h1>Our Current Design</h1>
-        <p className="tagline">An Overview</p>
+      {/* Heading */}
+      <section className="hero">
+        <div className="hero-content">
+          <div className="hero-subtitle-border">
+            <h1>CURRENT DESIGN</h1>
+            <p>
+              How our tactile coding system is built, generated, and optimized for accessibility.
+            </p>
+          </div>
+        </div>
       </section>
+
 
       {/* Section 1: OpenSCAD Frontend */}
       <section className="product-grid">

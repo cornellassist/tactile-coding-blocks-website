@@ -29,14 +29,13 @@
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.95);
   position: relative;
   z-index: 1;
   animation: fadeInUp 0.8s ease-out 0.2s both;
   font-weight: 300;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  letter-spacing: 0.2px;
 }
 
 .hero-subtitle-border {
@@ -60,11 +59,16 @@
 
 .block-strip {
   width: 100%;
-  background: hsl(0, 100%, 4%);
-  padding: 70px 0 5px; 
+  background: black;
+  padding: 40px 0 0;
+  margin: 0;
+
   display: flex;
   justify-content: center;
+
+  overflow: hidden; /* ✨ this cuts off everything below the strip */
 }
+
 
 .block-strip-inner {
   width: 90%;
@@ -109,39 +113,25 @@
   }
 }
 
-/* COLLAGE */
-
-/* TEAM IMAGE SECTION */
+/* COLLAGE — full bleed image */
 
 .collage-section {
-  padding: 80px 20px;
-  background: white;
-  display: flex;
-  justify-content: center;
+  width: 100vw;
+  padding: 0;              /* remove side padding */
+  margin: 0;
 }
 
 .collage-grid {
-  width: 100%;
-  max-width: 1100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  max-width: none;         /* remove 1100px cap */
+  display: block;
 }
 
 .collage-grid img {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
+  width: 100vw;            /* stretch full screen */
+  max-width: none;         /* remove 1200px cap */
+  display: block;
   object-fit: cover;
-  border-radius: 5px;
-
-  /* interaction */
-  transition: transform 0.45s ease;
-}
-
-
-.collage-grid img:hover {
-  transform: scale(1.03);
 }
 
 @keyframes fadeInUp {

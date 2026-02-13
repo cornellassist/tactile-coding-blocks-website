@@ -22,8 +22,8 @@ const Home: React.FC = () => {
         <div className="hero-subtitle-border">
         <h1>TACTILE CODING BLOCKS</h1>
           <p className="hero-tagline">
-            Making computer science accessible for blind and low-vision learners through
-            hands-on, tactile programming tools.
+            making computer science accessible for blind and low-vision learners through
+            hands-on, tactile programming tools
           </p>
         </div>
       </div>

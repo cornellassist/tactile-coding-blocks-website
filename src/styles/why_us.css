@@ -1,37 +1,141 @@
-.page-header {
+/* ========================= */
+/* HERO — SAME AS OTHER PAGES */
+/* ========================= */
+
+.hero {
   text-align: center;
-  padding: 60px 20px 30px;
-  background: white;
+  padding: 30px 20px;
+  background: #520404;
+  color: white;
+  position: relative;
+  overflow: hidden;
 }
 
-.page-header h1 {
-  font-size: 2.8rem;
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
   font-weight: 800;
+  letter-spacing: 3px;
 }
 
-.why-us-content {
-  display: flex;
-  gap: 60px;
-  padding: 60px;
-  background: white;
+.hero p {
+  font-size: 1.4rem;
+  opacity: 0.95;
 }
+
+.hero-subtitle-border {
+  border: 5px solid #520404;
+  padding: 40px;
+  border-radius: 7px;
+  margin: 40px;
+  width: calc(100% - 80px);
+}
+
+/* ========================= */
+/* MAIN WHY US SECTION       */
+/* ========================= */
+
+.why-us-section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 60px;
+  background: #1a0202;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+/* TEXT SIDE */
 
 .why-us-text {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
-.why-us-text h3 {
+.why-block {
+  background: white;
+  padding: 40px;
+  border-radius: 7px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.08);
+}
+
+.why-block h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
-  color: #d11a2a;
+  color: #1a0202;
 }
 
-.why-us-text p {
-  margin-bottom: 16px;
-  line-height: 1.8;
+.why-block ul {
+  padding-left: 18px;
 }
+
+.why-block li {
+  margin-bottom: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* IMAGE */
+
+.team-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  object-fit: cover;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.15);
+}
+
+/* ========================= */
+/* TESTIMONIALS              */
+/* ========================= */
 
 .testimonials {
+  padding: 80px 60px;
+  background: white;
+
   display: flex;
-  gap: 30px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.testimonial-card {
+  flex: 1;
+  max-width: 420px;
+  background: #1a0202;
+  color: white;
   padding: 40px;
+  border-radius: 7px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.testimonial-card blockquote {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* ========================= */
+/* MOBILE                    */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+  .why-us-section {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
+
 }

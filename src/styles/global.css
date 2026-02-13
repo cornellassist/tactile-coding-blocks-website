@@ -56,21 +56,23 @@ body {
   color: #bbb;
 }
 
-/* Navbar */
+/* ===================================================== */
+/* NAVBAR — MATCHES NEW DARK RED SITE                    */
+/* ===================================================== */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 20px 60px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+  background: #1a0202; /* deep red-black */
+  padding: 18px 28px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.45);
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: all 0.3s ease;
 }
+
+/* Hamburger menu stays */
 
 .hamburger {
   display: none;
@@ -84,7 +86,7 @@ body {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: #d11a2a;
+  background: white; /* changed from red to match dark navbar */
   border-radius: 3px;
   transition: all 0.3s ease;
 }
@@ -101,69 +103,90 @@ body {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-.logo-placeholder {
-  width: 50px;
-  height: 50px;
-  background-color: #ccc;
+
+/* Brand text in navbar */
+
+.brand {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.25s ease;
 }
 
-.logo img {
-  height: 55px;
-  width: auto;
-  display: block;
-  transition: transform 0.3s ease;
+.brand:hover {
+  opacity: 0.75;
 }
 
-.logo img:hover {
-  transform: scale(1.1);
-}
+
+/* Nav links */
 
 .nav-links {
   display: flex;
-  gap: 10px;
+  gap: 16px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #2d3748;
-  font-weight: 600;
-  padding: 10px 12px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  color: rgba(255,255,255,0.85);
+  font-weight: 400;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
   position: relative;
   font-size: 15px;
 }
 
+/* remove old underline animation */
 .nav-links a::before {
-  content: '';
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%) scaleX(0);
-  width: 60%;
-  height: 2px;
-  background: linear-gradient(90deg, #d11a2a, #ff4444);
-  transition: transform 0.3s ease;
-}
-
-.nav-links a:hover {
-  background-color: rgba(209, 26, 42, 0.1);
-  color: #d11a2a;
-}
-
-.nav-links a:hover::before {
-  transform: translateX(-50%) scaleX(1);
-}
-
-.nav-links a.active {
-  background: linear-gradient(135deg, #d11a2a 0%, #8b0000 100%);
-  color: white;
-  box-shadow: 0 4px 15px rgba(209, 26, 42, 0.4);
-}
-
-.nav-links a.active::before {
   display: none;
 }
+
+/* hover */
+
+.nav-links a:hover {
+  color: white;
+  background: rgba(255,255,255,0.08);
+}
+
+/* Active page = underline style */
+
+.nav-links a.active {
+  color: white;
+  position: relative;
+}
+
+.nav-links a:hover::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 2px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 2px;
+}
+
+
+/* animated underline */
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 2px;
+  background: #520404;
+  border-radius: 2px;
+}
+
+
+/* contact button fix */
 
 .contact-btn {
   background: linear-gradient(135deg, #d11a2a 0%, #ff4444 100%);
@@ -188,5 +211,123 @@ html {
 }
 
 .product-grid[id] {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 100px;
+}
+
+
+/* ================= MOBILE NAV ================= */
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background: #1a0202;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 90px 30px 30px;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.6);
+    transition: right 0.3s ease;
+    gap: 8px;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+
+}
+
+/* ===================================================== */
+/* FOOTER                                                */
+/* ===================================================== */
+
+.footer {
+  width: 100%;
+  background: #520404;
+  color: white;
+  padding: 30px 50px;
+}
+
+/* main layout */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE */
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  max-width: 600px;
+}
+
+.footer-text h2 {
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+}
+
+.footer-text p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.footer-copyright {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* logo */
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+/* RIGHT SIDE LINKS */
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link-column a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  transition: opacity 0.2s ease;
+}
+
+.link-column a:hover {
+  opacity: 0.7;
 }

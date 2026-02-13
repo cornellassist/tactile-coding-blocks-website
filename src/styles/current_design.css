@@ -1,4 +1,124 @@
-.current-design {
+/* ========================= */
+/* HEADER — MATCH PRODUCTS   */
+/* ========================= */
+
+.products-header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: #520404;
+  color: white;
+}
+
+.products-header h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  margin-top: 8px;
+}
+
+/* ========================= */
+/* SECTION GRID              */
+/* ========================= */
+
+.product-grid {
+  width: 100%;
+  max-width: 1400px;
+  margin: 80px auto;
   padding: 60px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  background: #1a0202; /* dark red behind cards */
+}
+
+/* ========================= */
+/* CARD STYLE                */
+/* ========================= */
+
+.product-card {
   background: white;
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* text content */
+
+.text-box {
+  max-width: 520px;
+}
+
+.text-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #1a0202;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.text-box p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* images */
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  transition: transform 0.35s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.02);
+}
+
+/* ========================= */
+/* ALTERNATING LAYOUT SPACING*/
+/* ========================= */
+
+.product-grid:nth-child(even) {
+  background: #120101;
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE         */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 24px;
+    gap: 40px;
+  }
+
+  .product-card {
+    text-align: center;
+  }
+
+  .text-box {
+    max-width: 100%;
+  }
+
+  .products-header h1 {
+    font-size: 2.8rem;
+  }
 }

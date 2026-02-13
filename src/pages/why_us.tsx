@@ -5,60 +5,76 @@ import teamPic from '../images/team_pic.jpg';
 const WhyUs: React.FC = () => {
   return (
     <div className="page">
-      {/* Page Heading */}
-      <section className="page-header">
-        <h1>Why Us</h1>
+
+      {/* HERO — matches other pages */}
+      <section className="hero">
+        <div className="hero-content">
+          <div className="hero-subtitle-border">
+            <h1>WHY US</h1>
+            <p>What makes our approach different</p>
+          </div>
+        </div>
       </section>
 
-      {/* Main Content */}
-      <section className="why-us-content">
-        <div className="why-us-text">
-          <h3>Our Motivation</h3>
-          <p>Existing tools are expensive ($500 sets)</p>
-          <p>Knowledge isn't transferable to more advanced programming</p>
-          <p>Advanced computing concepts are not taught</p>
+      {/* MAIN CONTENT */}
+      <section className="why-us-section">
 
-          <h3>Perks of Our Solution</h3>
-          <p>Cost - Less than $15 to manufacture</p>
-          <p>Any coding language, anywhere</p>
-          <p>Customization built-in from color scheme to coding language to concepts</p>
+        {/* LEFT SIDE */}
+        <div className="why-us-text">
+
+          <div className="why-block">
+            <h2>Our Motivation</h2>
+            <ul>
+              <li>Existing tools are expensive (often $500+ per set)</li>
+              <li>Skills learned don’t transfer into real programming</li>
+              <li>Advanced computing concepts are rarely introduced</li>
+            </ul>
+          </div>
+
+          <div className="why-block">
+            <h2>Perks of Our Solution</h2>
+            <ul>
+              <li>Manufacturing cost under $15</li>
+              <li>Works with any language and any environment</li>
+              <li>Fully customizable for curriculum and accessibility needs</li>
+            </ul>
+          </div>
+
         </div>
 
+        {/* RIGHT SIDE IMAGE */}
         <div className="team-image">
           <img src={teamPic} alt="Picture of the team" />
         </div>
+
       </section>
 
-      {/* Testimonials */}
+      {/* TESTIMONIALS */}
       <section className="testimonials">
+
         <div className="testimonial-card">
           <blockquote>
-            "Using the blocks GREATLY simplifies the task at hand by initially
-            eliminating the technology load-navigation, time in listening to
-            what a screen reader is doing, zooming issues with a LV student,
-            just starting up the laptop and the program. I love this as a first
-            step before the computer —even for tech capable students."
+            "Using the blocks greatly simplifies learning by removing the
+            technological barrier and allowing students to focus on concepts first."
           </blockquote>
         </div>
 
         <div className="testimonial-card">
           <blockquote>
-            "I loved that they could emulate the block program they had just set
-            up tactually with physical pieces into the coding environment in
-            Quorum. They went back and forth between the tactile blocks and the
-            coding interface on the laptop."
+            "Students seamlessly moved between tactile blocks and Quorum,
+            reinforcing understanding through physical interaction."
           </blockquote>
         </div>
 
         <div className="testimonial-card">
           <blockquote>
-            "I think the number of and concepts included in the blocks you sent
-            was perfect. Students were able to work through the physical blocks
-            and set up the Quorum program and then mess with it just a bit
-            within an hour."
+            "Within an hour, students were able to build, test, and modify programs
+            using the tactile system."
           </blockquote>
         </div>
+
       </section>
+
     </div>
   );
 };
