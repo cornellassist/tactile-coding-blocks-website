@@ -6,6 +6,8 @@ import '../styles/home.css';
 import b1 from "../images/block1drawing.png"
 import b2 from "../images/block2drawing.png"
 import b3 from "../images/block3drawing.png"
+import b4 from "../images/block1drawing.png"
+
 
 // Collage images
 import h1 from '../images/h1.jpg';
@@ -23,7 +25,7 @@ const Home: React.FC = () => {
     <section className="hero">
       <div className="hero-content">
         <div className="hero-subtitle-border">
-        <h1>Tactile Coding Blocks</h1>
+        <h1>TACTILE CODING BLOCKS</h1>
           <p className="hero-tagline">
             Making computer science accessible for blind and low-vision learners through
             hands-on, tactile programming tools.
@@ -32,14 +34,17 @@ const Home: React.FC = () => {
       </div>
     </section>
 
-    {/* Block Drawings Strip
+  <div className="block-strip-between"></div>
+
+    {/* Block Drawings Strip */}
     <section className="block-strip">
       <div className="block-strip-inner">
         <img src={b1} alt="Tactile block drawing" />
         <img src={b2} alt="Tactile block drawing" />
         <img src={b3} alt="Tactile block drawing" />
+        <img src={b4} alt="Tactile block drawing" />
       </div>
-    </section> */}
+    </section>
 
 
       {/* Collage Section */}
