@@ -15,7 +15,7 @@ const DesignProcess: React.FC = () => {
         <div className="hero-content">
           <div className="hero-subtitle-border">
             <h1>DESIGN PROCESS</h1>
-            <p>Our Timeline</p>
+            <p>our timeline + history</p>
           </div>
         </div>
       </section>

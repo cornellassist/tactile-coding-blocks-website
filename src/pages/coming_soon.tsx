@@ -12,7 +12,7 @@ const ComingSoon: React.FC = () => {
         <div className="hero-content">
           <div className="hero-subtitle-border">
             <h1>COMING SOON</h1>
-            <p>What we’re building next</p>
+            <p>what we’re building next</p>
           </div>
         </div>
       </section>

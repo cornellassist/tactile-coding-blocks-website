@@ -13,7 +13,7 @@ const CurrentDesign: React.FC = () => {
           <div className="hero-subtitle-border">
             <h1>CURRENT DESIGN</h1>
             <p>
-              How our tactile coding system is built, generated, and optimized for accessibility.
+              how our tactile coding system is built, generated, and optimized for accessibility
             </p>
           </div>
         </div>

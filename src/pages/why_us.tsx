@@ -11,7 +11,7 @@ const WhyUs: React.FC = () => {
         <div className="hero-content">
           <div className="hero-subtitle-border">
             <h1>WHY US</h1>
-            <p>What makes our approach different</p>
+            <p>what makes our approach different</p>
           </div>
         </div>
       </section>

@@ -15,7 +15,7 @@ const Products: React.FC = () => {
           <div className="hero-subtitle-border">
             <h1>OUR PRODUCTS</h1>
             <p className="hero-tagline">
-              Tools designed to make computer science accessible through touch.
+              tools designed to make computer science accessible through touch
             </p>
           </div>
         </div>
