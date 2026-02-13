@@ -1,5 +1,11 @@
 import React from 'react';
-import '../styles.css';
+import '../styles/global.css';
+import '../styles/home.css';
+
+// Block drawings
+import b1 from "../images/block1drawing.png"
+import b2 from "../images/block2drawing.png"
+import b3 from "../images/block3drawing.png"
 
 // Collage images
 import h1 from '../images/h1.jpg';
@@ -25,6 +31,16 @@ const Home: React.FC = () => {
         </div>
       </div>
     </section>
+
+    {/* Block Drawings Strip
+    <section className="block-strip">
+      <div className="block-strip-inner">
+        <img src={b1} alt="Tactile block drawing" />
+        <img src={b2} alt="Tactile block drawing" />
+        <img src={b3} alt="Tactile block drawing" />
+      </div>
+    </section> */}
+
 
       {/* Collage Section */}
       <section className="collage-section">

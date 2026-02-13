@@ -8,7 +8,15 @@ import DesignProcess from './pages/design_process';
 import WhyUs from './pages/why_us';
 import ComingSoon from './pages/coming_soon';
 import logo from './images/logo.jpg';
-import './styles.css';
+import './styles/global.css';
+import './styles/home.css';
+import './styles/products.css';
+import './styles/why_us.css';
+import './styles/design_process.css';
+import './styles/current_design.css';
+import './styles/coming_soon.css';
+
+
 
 function App() {
   const location = useLocation();

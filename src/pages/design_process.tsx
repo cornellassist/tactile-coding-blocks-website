@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';
+import '../styles/design_process.css';
 import SaintJoseph from "../images/saint_josephs.jpg"
 import Epiq from "../images/epiq.jpg"
 import Island from "../images/island.jpg"

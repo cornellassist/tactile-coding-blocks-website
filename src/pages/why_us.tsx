@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';
+import '../styles/why_us.css';
 import teamPic from '../images/team_pic.jpg';
 
 const WhyUs: React.FC = () => {

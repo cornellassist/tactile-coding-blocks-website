@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';
+import '../styles/coming_soon.css';
 import advancedConceptsImage from '../images/advanced_concepts.jpg';
 import Curriculum from '../images/curriculums.jpg';
 

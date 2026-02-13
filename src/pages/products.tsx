@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';
+import '../styles/products.css';
 
 // Product images
 import tactileBlocks from '../images/tactile_blocks.jpg';

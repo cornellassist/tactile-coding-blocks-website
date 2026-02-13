@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';
+import '../styles/current_design.css';
 import digitalBrailleGenerator from '../images/digital_braille_generator.jpg';
 import backendOpenscad from '../images/backend_openscad.jpg';
 import blockDesign from '../images/block_design.jpg';

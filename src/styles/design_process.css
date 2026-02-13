@@ -1,0 +1,21 @@
+.timeline-nav {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 1rem 0;
+}
+
+.timeline-container {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.timeline-line {
+  height: 6px;
+  background: linear-gradient(90deg, #d11a2a, #ff4444);
+}
+
+.timeline-events {
+  display: flex;
+  justify-content: space-between;
+}
