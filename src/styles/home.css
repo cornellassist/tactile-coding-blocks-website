@@ -111,24 +111,37 @@
 
 /* COLLAGE */
 
+/* TEAM IMAGE SECTION */
+
 .collage-section {
-  padding: 20px 20px;
+  padding: 80px 20px;
   background: white;
+  display: flex;
+  justify-content: center;
 }
 
 .collage-grid {
+  width: 100%;
+  max-width: 1100px;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .collage-grid img {
   width: 100%;
+  max-width: 1200px;
   height: auto;
-  object-fit: contain;
-  background: white;
+  object-fit: cover;
+  border-radius: 5px;
+
+  /* interaction */
+  transition: transform 0.45s ease;
+}
+
+
+.collage-grid img:hover {
+  transform: scale(1.03);
 }
 
 @keyframes fadeInUp {
