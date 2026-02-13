@@ -9,6 +9,7 @@ import WhyUs from './pages/why_us';
 import ComingSoon from './pages/coming_soon';
 import './styles/global.css';
 import logo from './images/logo.jpg'
+import MicrobitPage from './pages/microbit';
 
 
 function App() {
@@ -40,25 +41,46 @@ function App() {
         </div>
 
         <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+
           <Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>
             HOME
           </Link>
-          <Link to="/products" className={location.pathname === '/products' ? 'active' : ''} onClick={closeMenu}>
-            PRODUCTS
-          </Link>
+
+          {/* PRODUCTS WITH DROPDOWN */}
+          <div className="nav-dropdown">
+            <Link
+              to="/products"
+              className={location.pathname.startsWith('/products') ? 'active' : ''}
+              onClick={closeMenu}
+            >
+              PRODUCTS
+            </Link>
+
+            <div className="dropdown-menu">
+              <Link to="/products/microbit" onClick={closeMenu}>
+                micro:bit Blocks
+              </Link>
+            </div>
+          </div>
+
           <Link to="/current-design" className={location.pathname === '/current-design' ? 'active' : ''} onClick={closeMenu}>
             CURRENT DESIGN
           </Link>
+
           <Link to="/design-process" className={location.pathname === '/design-process' ? 'active' : ''} onClick={closeMenu}>
             DESIGN PROCESS
           </Link>
+
           <Link to="/why-us" className={location.pathname === '/why-us' ? 'active' : ''} onClick={closeMenu}>
             WHY US
           </Link>
+
           <Link to="/coming-soon" className={location.pathname === '/coming-soon' ? 'active' : ''} onClick={closeMenu}>
             COMING SOON
           </Link>
+
         </nav>
+
       </header>
 
       {/* Routes */}
@@ -69,6 +91,7 @@ function App() {
         <Route path="/design-process" element={<DesignProcess />} />
         <Route path="/why-us" element={<WhyUs />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route path="/products/microbit" element={<MicrobitPage />} />
       </Routes>
 
       {/* FOOTER */}
