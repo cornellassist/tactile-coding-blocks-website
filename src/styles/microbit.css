@@ -1,43 +1,23 @@
-
 /* ============================= */
-/* HEADER */
-/* ============================= */
-
-.site-header {
-  background: #4a0000;
-  color: white;
-  padding: 16px 40px;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.nav a {
-  margin-left: 24px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.nav .active {
-  border-bottom: 2px solid white;
-}
-
-/* ============================= */
-/* HERO */
+/* PAGE BACKGROUND */
 /* ============================= */
 
-.microbit .hero {
+.microbit-page {
+  background-color: #d7caa2;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+/* ============================= */
+/* MICROBIT HERO (PAGE-SPECIFIC) */
+/* ============================= */
+
+.microbit-hero {
   padding: 60px 50px;
   text-align: center;
   background: #e7d3a7;
+  border-bottom: 6px solid #8e1f1f;
 }
 
 .hero-title {
@@ -46,11 +26,6 @@
   color: black;
   font-weight: 900;
   font-family: 'Inter', sans-serif;
-}
-
-.microbit-logo {
-  font-size: 18px;
-  margin-left: 12px;
 }
 
 .microbit-logo {
@@ -72,6 +47,7 @@
   flex-wrap: wrap;
 }
 
+
 /* ============================= */
 /* CARDS */
 /* ============================= */
@@ -79,7 +55,7 @@
 .card {
   background: #8e1f1f;
   color: white;
-  width: 320px;           /* WIDER CARDS */
+  width: 320px;
   padding: 28px;
   text-align: center;
   transition: transform 0.2s ease;
@@ -97,7 +73,8 @@
   line-height: 1.5;
 }
 
-/* FORCE HERO BUTTON STYLING */
+
+/* BUTTON */
 
 .card-btn {
   background: black;
@@ -107,7 +84,6 @@
   margin: 16px auto;
   cursor: pointer;
 
-  /* NORMALIZE */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +93,6 @@
   font-size: 14px;
   font-weight: 600;
 
-  /* ANIMATION */
   transition: 
     background 0.25s ease,
     transform 0.2s ease,
@@ -129,7 +104,6 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
-
 
 
 /* ============================= */
@@ -144,11 +118,6 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-}
-
-.img-placeholder.large {
-  height: 180px;
-  width: 260px;
 }
 
 .premade-image {
@@ -181,7 +150,8 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* PREMADE CARD LAYOUT */
+
+/* PREMADE CARD */
 
 .premade-card {
   background: #ddd;
@@ -196,8 +166,6 @@
   gap: 60px;
 }
 
-/* LEFT SIDE */
-
 .premade-left {
   text-align: left;
   display: flex;
@@ -205,20 +173,11 @@
   gap: 14px;
 }
 
-.premade-image {
-  width: 240px;
-  height: auto;
-}
-
-/* RIGHT SIDE BUTTON STACK */
-
 .premade-actions {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-/* BUTTON STYLE */
 
 .action-btn {
   background: #8e1f1f;
@@ -230,8 +189,6 @@
   transition: all 0.25s ease;
 }
 
-/* HOVER EFFECT */
-
 .action-btn:hover {
   background: #b22a2a;
   transform: translateY(-4px);
@@ -240,40 +197,12 @@
 
 
 /* ============================= */
-/* FOOTER */
+/* MOBILE */
 /* ============================= */
 
-.site-footer {
-  background: #4a0000;
-  color: white;
-  text-align: center;
-  padding: 24px;
-}
-
-/* ===================================================== */
-/* 📱 MOBILE RESPONSIVE DESIGN */
-/* ===================================================== */
-
-/* Tablet */
-@media (max-width: 1100px) {
-
-  .card-grid {
-    gap: 40px;
-  }
-
-  .card {
-    width: 300px;
-  }
-
-  .hero-title {
-    font-size: 42px;
-  }
-}
-
-/* Large phone */
 @media (max-width: 800px) {
 
-  .hero {
+  .microbit-hero {
     padding: 40px 20px;
   }
 
@@ -292,43 +221,12 @@
     text-align: center;
   }
 
-  .img-placeholder.large {
-    width: 100%;
-  }
-
   .premade-image {
     width: 100%;
     max-width: 320px;
-  }
-  
-}
-
-/* Small phone */
-@media (max-width: 480px) {
-
-  .hero-title {
-    font-size: 32px;
-  }
-
-  .nav {
-    display: none; /* collapse nav on small phones */
-  }
-
-  .card {
-    width: 92%;
-    padding: 24px;
-  }
-
-  .premade-section h2 {
-    font-size: 30px;
-  }
-
-  .download-btn {
-    width: 100%;
   }
 }
 
 html {
   scroll-behavior: smooth;
 }
-

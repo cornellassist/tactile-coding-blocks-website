@@ -5,7 +5,8 @@ import doorbellImg from "../images/doorbell.png";
 import shakeAlarmImg from "../images/shakeAlarm.png";
 
 const MicrobitPage: React.FC = () => {
-    const scrollToPremade = () => {
+
+  const scrollToPremade = () => {
     const el = document.getElementById("premade");
     if (!el) return;
 
@@ -13,27 +14,25 @@ const MicrobitPage: React.FC = () => {
     const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({
-        top: y,
-        behavior: "smooth"
+      top: y,
+      behavior: "smooth"
     });
-    };
+  };
 
-    return (
-        
+  return (
     <div className="microbit-page">
 
-      {/* HERO SECTION */}
-      <section className="hero">
+      {/* MICROBIT HERO — NOT SHARED WITH OTHER PAGES */}
+      <section className="microbit-hero">
 
         <h1 className="hero-title">
-        micro:bit blocks 
-        <img 
+          micro:bit blocks
+          <img 
             src={microbitLogo} 
             alt="micro:bit logo" 
             className="microbit-logo"
-        />
+          />
         </h1>
-
 
         <div className="card-grid">
 
@@ -42,16 +41,15 @@ const MicrobitPage: React.FC = () => {
             <h3>Download Pre-Made micro:bit Sets</h3>
 
             <a
-            href="#premade"
-            className="card-btn"
-            onClick={(e) => {
+              href="#premade"
+              className="card-btn"
+              onClick={(e) => {
                 e.preventDefault();
                 scrollToPremade();
-            }}
+              }}
             >
-            View ZIP Sets
+              View ZIP Sets
             </a>
-
 
             <div className="img-placeholder">PUT IMAGE HERE</div>
 
@@ -66,12 +64,12 @@ const MicrobitPage: React.FC = () => {
             <h3>Order micro:bit Block Kits</h3>
 
             <a
-            href="https://microbit.org/"
-            className="card-btn"
-            target="_blank"
-            rel="noopener noreferrer"
+              href="https://microbit.org/"
+              className="card-btn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-            Order Here
+              Order Here
             </a>
 
             <div className="img-placeholder">PUT IMAGE HERE</div>
@@ -100,82 +98,79 @@ const MicrobitPage: React.FC = () => {
       </section>
 
       {/* PREMADE SETS */}
-    <section className="premade-section" id="premade">
+      <section className="premade-section" id="premade">
 
+        <h2>Pre-Made Sets</h2>
 
-    <h2>Pre-Made Sets</h2>
+        {/* DOORBELL */}
+        <div className="premade-card">
 
-    {/* DOORBELL */}
-    <div className="premade-card">
+          <div className="premade-left">
+            <h3>Doorbell</h3>
 
-        <div className="premade-left">
-        <h3>Doorbell</h3>
+            <img
+              src={doorbellImg}
+              alt="Doorbell blocks"
+              className="premade-image"
+            />
+          </div>
 
-        <img
-            src = {doorbellImg}
-            alt="Doorbell blocks"
-            className="premade-image"
-        />
+          <div className="premade-actions">
+            
+            <a 
+              href="/tactile-coding-blocks-website/doorbell_blocks.zip"
+              className="action-btn"
+              target="_blank"
+            >
+              Download Doorbell ZIP File
+            </a>
+
+            <a 
+              href="https://makecode.microbit.org/39554-92625-62501-54261"
+              className="action-btn"
+              target="_blank"
+            >
+              MakeCode Demo
+            </a>
+
+          </div>
         </div>
 
-        <div className="premade-actions">
-        
-        {/* ZIP DOWNLOAD LINK */}
-        <a 
-            href="/tactile-coding-blocks-website/doorbell_blocks.zip"
-            className="action-btn"
-            target="_blank"
-        >
-            Download Doorbell ZIP File
-        </a>
+        {/* SHAKE ALARM */}
+        <div className="premade-card">
 
-        {/* MAKECODE DEMO LINK */}
-        <a 
-            href="https://makecode.microbit.org/39554-92625-62501-54261"
-            className="action-btn"
-            target="_blank"
-        >
-            MakeCode Demo
-        </a>
+          <div className="premade-left">
+            <h3>Shake Alarm</h3>
 
-        </div>
-    </div>
+            <img
+              src={shakeAlarmImg}
+              alt="Shake alarm blocks"
+              className="premade-image"
+            />
+          </div>
 
-    {/* SHAKE ALARM */}
-    <div className="premade-card">
+          <div className="premade-actions">
 
-        <div className="premade-left">
-        <h3>Shake Alarm</h3>
+            <a 
+              href="/tactile-coding-blocks-website/shake_alarm_blocks.zip"
+              className="action-btn"
+              target="_blank"
+            >
+              Download Shake Alarm ZIP File
+            </a>
 
-        <img
-            src = {shakeAlarmImg}
-            alt="Shake alarm blocks"
-            className="premade-image"
-        />
+            <a 
+              href="https://makecode.microbit.org/S93931-92433-49899-05213"
+              className="action-btn"
+              target="_blank"
+            >
+              MakeCode Demo
+            </a>
+
+          </div>
         </div>
 
-        <div className="premade-actions">
-
-        <a 
-            href="/tactile-coding-blocks-website/shake_alarm_blocks.zip"
-            className="action-btn"
-            target="_blank"
-        >
-            Download Shake Alarm ZIP File
-        </a>
-
-        <a 
-            href="https://makecode.microbit.org/S93931-92433-49899-05213"
-            className="action-btn"
-            target="_blank"
-        >
-            MakeCode Demo
-        </a>
-
-        </div>
-    </div>
-
-    </section>
+      </section>
 
     </div>
   );
