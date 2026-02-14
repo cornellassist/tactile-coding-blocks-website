@@ -157,7 +157,7 @@ const MicrobitPage: React.FC = () => {
         <div className="premade-actions">
 
         <a 
-            href="//tactile-coding-blocks-website/shake_alarm_blocks.zip"
+            href="/tactile-coding-blocks-website/shake_alarm_blocks.zip"
             className="action-btn"
             target="_blank"
         >

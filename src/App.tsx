@@ -1,7 +1,7 @@
 // src/App.tsx
 import { useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import Home from './pages/home';
+import Home from './pages/Home';
 import Products from './pages/products';
 import CurrentDesign from './pages/current_design';
 import DesignProcess from './pages/design_process';
