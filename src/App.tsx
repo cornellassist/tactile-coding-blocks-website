@@ -29,9 +29,10 @@ function App() {
     <>
       {/* Navbar (shared across all pages) */}
       <header className="navbar">
-        <Link to="https://www.cornellassist.com/" className="brand">
+        <a href="https://www.cornellassist.com/" className="brand">
+
           CORNELL ASSISTIVE TECHNOLOGIES
-        </Link>
+        </a>
 
         {/* Hamburger Menu Button */}
         <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
