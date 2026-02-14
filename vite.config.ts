@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/tactile-coding-blocks-website/',   // ← THIS FIXES EVERYTHING
+  base: '/tactile-coding-blocks-website/',
 })
