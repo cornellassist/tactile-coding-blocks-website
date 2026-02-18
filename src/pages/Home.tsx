@@ -10,7 +10,8 @@ import b4 from "../images/block1drawing.png"
 
 
 // Collage images
-import h7 from '../images/annotatedTeam.jpg';
+// import h7 from '../images/annotatedTeam.jpg';
+import homepic from '../images/homepic.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -32,7 +33,7 @@ const Home: React.FC = () => {
     {/* Collage Section */}
     <section className="collage-section">
       <div className="collage-grid">
-        <img src={h7} alt="Team photo of the tacticle coding blocks group" />
+        <img src={homepic} alt="Team photo of the tacticle coding blocks group" />
       </div>
     </section>
 

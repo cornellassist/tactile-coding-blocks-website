@@ -3,6 +3,10 @@ import "../styles/microbit.css";
 import microbitLogo from "../images/microbitLogo.png";
 import doorbellImg from "../images/doorbell.png";
 import shakeAlarmImg from "../images/shakeAlarm.png";
+import sets from "../images/sets.png";
+import fusion from "../images/fusion.png";
+import editor from "../images/editor.png";
+
 
 const MicrobitPage: React.FC = () => {
 
@@ -51,7 +55,11 @@ const MicrobitPage: React.FC = () => {
               View ZIP Sets
             </a>
 
-            <div className="img-placeholder">PUT IMAGE HERE</div>
+            <img
+              src={fusion}
+              alt="Pre-made microbit sets"
+              className="card-image"
+            />
 
             <p>
               Download ready-to-use projects and starter kits to explore
@@ -64,7 +72,7 @@ const MicrobitPage: React.FC = () => {
             <h3>Order micro:bit Block Kits</h3>
 
             <a
-              href="https://microbit.org/"
+              href="https://makecode.microbit.org/#editor"
               className="card-btn"
               target="_blank"
               rel="noopener noreferrer"
@@ -72,7 +80,11 @@ const MicrobitPage: React.FC = () => {
               Order Here
             </a>
 
-            <div className="img-placeholder">PUT IMAGE HERE</div>
+            <img
+              src={sets}
+              alt="microbit kits"
+              className="card-image"
+            />
 
             <p>
               Order physical micro:bit kits with the components you need for
@@ -84,9 +96,20 @@ const MicrobitPage: React.FC = () => {
           <div className="card">
             <h3>Try micro:bit Block Editor</h3>
 
-            <button className="card-btn">Open Editor</button>
+<a
+              href="https://makecode.microbit.org/#editor"
+              className="card-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Editor
+            </a>
 
-            <div className="img-placeholder">PUT IMAGE HERE</div>
+            <img
+              src={editor}
+              alt="microbit editor"
+              className="card-image"
+            />
 
             <p>
               Open the MakeCode editor to create, test, and experiment with
