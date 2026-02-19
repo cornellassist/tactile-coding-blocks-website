@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/why_us.css';
 
-import leadsPic from '../images/leads.JPG';
-import mechePic from '../images/meche.JPG';
-import softwarePic from '../images/software.JPG';
+import leadsPic from '../images/leads.jpg';
+import mechePic from '../images/meche.jpg';
+import softwarePic from '../images/software.jpg';
 
 const WhyUs: React.FC = () => {
   return (
