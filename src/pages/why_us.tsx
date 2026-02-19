@@ -1,12 +1,15 @@
 import React from 'react';
 import '../styles/why_us.css';
-import teamPic from '../images/team_pic.jpg';
+
+import leadsPic from '../images/leads.JPG';
+import mechePic from '../images/meche.JPG';
+import softwarePic from '../images/software.JPG';
 
 const WhyUs: React.FC = () => {
   return (
     <div className="page">
 
-      {/* HERO — matches other pages */}
+      {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <div className="hero-subtitle-border">
@@ -16,10 +19,41 @@ const WhyUs: React.FC = () => {
         </div>
       </section>
 
-      {/* MAIN CONTENT */}
+      {/* FULL WIDTH TEAM SECTION */}
+      <section className="team-section">
+
+        {/* LEADS */}
+        <div className="team-card-wide">
+          <img src={leadsPic} alt="Project leads" />
+          <h2>Project Leads</h2>
+          <p>
+            Savaas Iqbal (left), William Ellis (right)
+          </p>
+        </div>
+
+        {/* MECHE */}
+        <div className="team-card-wide">
+          <img src={mechePic} alt="Mechanical engineering team" />
+          <h2>Mechanical Engineering</h2>
+          <p>
+            Shannon Lin, Rishabh Dholakia, Andy Chen, William Ellis, Emily Wang, Sahana Behera
+          </p>
+        </div>
+
+        {/* SOFTWARE */}
+        <div className="team-card-wide">
+          <img src={softwarePic} alt="Software team" />
+          <h2>Software</h2>
+          <p>
+            Shannon Lin, Lila Alderete, Madhu Balaji, Sahana Behera
+          </p>
+        </div>
+
+      </section>
+
+      {/* MOTIVATION + PERKS */}
       <section className="why-us-section">
 
-        {/* LEFT SIDE */}
         <div className="why-us-text">
 
           <div className="why-block">
@@ -40,11 +74,6 @@ const WhyUs: React.FC = () => {
             </ul>
           </div>
 
-        </div>
-
-        {/* RIGHT SIDE IMAGE */}
-        <div className="team-image">
-          <img src={teamPic} alt="Picture of the team" />
         </div>
 
       </section>
