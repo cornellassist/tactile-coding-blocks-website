@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 
 // Product images
-import tactileBlocks from '../images/tactile_blocks.jpg';
-import digitalBrailleGenerator from '../images/digital_braille_generator.jpg';
+import tactileBlocks from '../images/tactileset.jpeg';
+import digitalBrailleGenerator from '../images/fusion.png';
 
 const Products: React.FC = () => {
   const navigate = useNavigate(); 
