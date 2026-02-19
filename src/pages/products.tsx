@@ -1,11 +1,14 @@
 import React from 'react';
 import '../styles/products.css';
+import { useNavigate } from "react-router-dom";
+
 
 // Product images
 import tactileBlocks from '../images/tactile_blocks.jpg';
 import digitalBrailleGenerator from '../images/digital_braille_generator.jpg';
 
 const Products: React.FC = () => {
+  const navigate = useNavigate(); 
   return (
     <div className="page">
 
@@ -29,14 +32,16 @@ const Products: React.FC = () => {
           <h2>Tactile Coding Blocks Kits</h2>
           <p>Ready to use kits that allow students and educators to explore programming concepts through hands-on, tactile interaction.</p>
 
-          <a
-            href="http://localhost:4000"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="product-btn"
-          >
-            Click to learn more and order kits
-          </a>
+          <div>
+            
+            <button
+              className="product-btn"
+              onClick={() => navigate("/products/microbit")}
+            >
+              Click to learn more and order kits
+            </button>
+
+          </div>
 
           <img src={tactileBlocks} alt="Tactile Coding Blocks Kit" />
         </div>
