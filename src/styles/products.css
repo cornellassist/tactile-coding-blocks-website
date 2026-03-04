@@ -58,8 +58,8 @@
   padding: 60px 60px 80px; 
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: repeat(3, 1fr); /* changed */
+  gap: 60px;
   background: #1a0202;
 }
 

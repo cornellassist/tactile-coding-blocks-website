@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 // Product images
 import tactileBlocks from '../images/tactileset.jpeg';
 import digitalBrailleGenerator from '../images/fusion.png';
+import autogen from '../images/autogen.png';
 
 const Products: React.FC = () => {
   const navigate = useNavigate(); 
@@ -48,7 +49,7 @@ const Products: React.FC = () => {
 
         {/* COLUMN 2 */}
         <div className="product-column">
-          <h2>3D Print Files</h2>
+          <h2>Ready-To-Go 3D Print Files</h2>
           <p>Ready to download designs that let educators and makers create their own accessible coding tools locally and affordably.</p>
 
           <a
@@ -66,6 +67,27 @@ const Products: React.FC = () => {
           />
         </div>
 
+      {/* COLUMN 3 */}
+      <div className="product-column">
+        <h2>Generate Your Own Blocks</h2>
+
+        <p>
+          Use our interactive generator to design custom tactile coding blocks.
+          Instantly create 3D printable files tailored to your lesson or project.
+        </p>
+
+        <button
+          className="product-btn"
+          onClick={() => navigate("/products/generator")}
+        >
+          Open Block Generator
+        </button>
+
+        <img
+          src={autogen}
+          alt="Generate your own tactile coding blocks"
+        />
+      </div>
       </section>
 
     </div>
