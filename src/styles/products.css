@@ -166,6 +166,13 @@
   }
 }
 
+.coming-soon {
+  background-color: #b5b5b5;
+  color: white;
+  cursor: default;
+  pointer-events: none;
+}
+
 
 /* image */
 

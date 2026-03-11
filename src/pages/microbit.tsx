@@ -72,12 +72,10 @@ const MicrobitPage: React.FC = () => {
             <h3>Order micro:bit Block Kits</h3>
 
             <a
-              href="https://makecode.microbit.org/#editor"
               className="card-btn"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              Order Here
+              Coming Soon
+              {/* Order Here */}
             </a>
 
             <img

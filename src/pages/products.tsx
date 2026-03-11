@@ -34,6 +34,12 @@ const Products: React.FC = () => {
           <p>Ready to use kits that allow students and educators to explore programming concepts through hands-on, tactile interaction.</p>
 
           <div>
+            <button className="product-btn coming-soon">
+              Coming Soon!
+            </button>
+          </div>
+
+          {/* <div>
             
             <button
               className="product-btn"
@@ -42,7 +48,7 @@ const Products: React.FC = () => {
               Click to learn more and order kits
             </button>
 
-          </div>
+          </div> */}
 
           <img src={tactileBlocks} alt="Tactile Coding Blocks Kit" />
         </div>
