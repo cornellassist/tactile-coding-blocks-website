@@ -82,11 +82,15 @@ const Products: React.FC = () => {
           Instantly create 3D printable files tailored to your lesson or project.
         </p>
 
-        <button
+        {/* <button
           className="product-btn"
           onClick={() => navigate("/products/generator")}
         >
           Open Block Generator
+        </button> */}
+
+        <button className="product-btn coming-soon">
+              Coming Soon!
         </button>
 
         <img
