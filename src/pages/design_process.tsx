@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../styles/design_process.css';
-import SaintJoseph from "../images/saint_josephs.jpg"
-import Epiq from "../images/epiq.jpg"
-import Island from "../images/island.jpg"
-import Assistive from "../images/assistive_tech.jpg"
-import Abacus from "../images/abacus_bee.jpg"
+
+import SaintJoseph from "../images/saint_josephs.jpg";
+import Epiq from "../images/epiq.jpg";
+import Island from "../images/island.jpg";
+import Assistive from "../images/assistive_tech.jpg";
+import Abacus from "../images/abacus_bee.jpg";
 
 const DesignProcess: React.FC = () => {
+
+  const juneRef = useRef<HTMLElement | null>(null);
+  const sepRef = useRef<HTMLElement | null>(null);
+  const julyRef = useRef<HTMLElement | null>(null);
+  const febRef = useRef<HTMLElement | null>(null);
+  const augRef = useRef<HTMLElement | null>(null);
+
+  const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
+    ref.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  };
+
   return (
     <div className="page">
 
@@ -23,56 +38,48 @@ const DesignProcess: React.FC = () => {
       {/* Timeline Navigation */}
       <div className="timeline-container">
         <div className="timeline-line"></div>
+
         <div className="timeline-events">
-          <div className="timeline-item">
-            <a href="#june2023">
-              <div className="dot"></div>
-              <p className="timeline-date">June 2023</p>
-              <p className="timeline-label">First Design with Scratch</p>
-            </a>
+
+          <div className="timeline-item" onClick={() => scrollToSection(juneRef)}>
+            <div className="dot"></div>
+            <p className="timeline-date">June 2023</p>
+            <p className="timeline-label">First Design with Scratch</p>
           </div>
 
-          <div className="timeline-item">
-            <a href="#sep2023">
-              <div className="dot"></div>
-              <p className="timeline-date">Sep 2023</p>
-              <p className="timeline-label">Feedback from Abacus Bee Princeton</p>
-            </a>
+          <div className="timeline-item" onClick={() => scrollToSection(sepRef)}>
+            <div className="dot"></div>
+            <p className="timeline-date">Sep 2023</p>
+            <p className="timeline-label">Feedback from Abacus Bee Princeton</p>
           </div>
 
-          <div className="timeline-item">
-            <a href="#july2024">
-              <div className="dot"></div>
-              <p className="timeline-date">July 2024</p>
-              <p className="timeline-label">EPIQ Conference</p>
-            </a>
+          <div className="timeline-item" onClick={() => scrollToSection(julyRef)}>
+            <div className="dot"></div>
+            <p className="timeline-date">July 2024</p>
+            <p className="timeline-label">EPIQ Conference</p>
           </div>
 
-          <div className="timeline-item">
-            <a href="#feb2025">
-              <div className="dot"></div>
-              <p className="timeline-date">Feb 2025</p>
-              <p className="timeline-label">Cornell Assistive Tech</p>
-            </a>
+          <div className="timeline-item" onClick={() => scrollToSection(febRef)}>
+            <div className="dot"></div>
+            <p className="timeline-date">Feb 2025</p>
+            <p className="timeline-label">Cornell Assistive Tech</p>
           </div>
 
-          <div className="timeline-item">
-            <a href="#aug2025">
-              <div className="dot"></div>
-              <p className="timeline-date">Aug 2025</p>
-              <p className="timeline-label">ISLAND Conference & NYPL</p>
-            </a>
+          <div className="timeline-item" onClick={() => scrollToSection(augRef)}>
+            <div className="dot"></div>
+            <p className="timeline-date">Aug 2025</p>
+            <p className="timeline-label">ISLAND Conference & NYPL</p>
           </div>
+
         </div>
       </div>
 
       {/* ===================== */}
-      {/* JUNE 2023             */}
+      {/* JUNE 2023 */}
       {/* ===================== */}
 
-      <section className="product-grid" id="june2023">
+      <section className="product-grid" ref={juneRef}>
 
-        {/* LEFT: title + image */}
         <div className="product-card">
           <h2>First Design with Scratch</h2>
           <div className="product-image">
@@ -80,12 +87,11 @@ const DesignProcess: React.FC = () => {
           </div>
         </div>
 
-        {/* RIGHT: description */}
         <div className="product-card">
           <h2>June 2023</h2>
           <div className="text-box">
             <p>
-              We designed our first iteration of the tactile coding blocks for the Mountain Lakes Makers Space at St. Joseph's School for Blind in New Jersey. 
+              We designed our first iteration of the tactile coding blocks for the Mountain Lakes Makers Space at St. Joseph's School for Blind in New Jersey.
               Our original idea used Scratch to translate blocks into a 3D printed tactile format, but the system still required heavy teacher support and was not fully accessible.
             </p>
           </div>
@@ -94,12 +100,11 @@ const DesignProcess: React.FC = () => {
       </section>
 
       {/* ===================== */}
-      {/* SEPTEMBER 2023        */}
+      {/* SEPTEMBER 2023 */}
       {/* ===================== */}
 
-      <section className="product-grid" id="sep2023">
+      <section className="product-grid" ref={sepRef}>
 
-        {/* LEFT */}
         <div className="product-card">
           <h2>Feedback from Abacus Bee Princeton</h2>
           <div className="product-image">
@@ -107,12 +112,11 @@ const DesignProcess: React.FC = () => {
           </div>
         </div>
 
-        {/* RIGHT */}
         <div className="product-card">
           <h2>September 2023</h2>
           <div className="text-box">
             <p>
-              We created a redesigned block system and tested it with blind adults at Abacus Bee Princeton. 
+              We created a redesigned block system and tested it with blind adults at Abacus Bee Princeton.
               The feedback highlighted improvements in tactile clarity and accessibility, while also helping us refine usability and interaction design.
             </p>
           </div>
@@ -121,12 +125,11 @@ const DesignProcess: React.FC = () => {
       </section>
 
       {/* ===================== */}
-      {/* JULY 2024             */}
+      {/* JULY 2024 */}
       {/* ===================== */}
 
-      <section className="product-grid" id="july2024">
+      <section className="product-grid" ref={julyRef}>
 
-        {/* LEFT */}
         <div className="product-card">
           <h2>EPIQ Conference</h2>
           <div className="product-image">
@@ -134,7 +137,6 @@ const DesignProcess: React.FC = () => {
           </div>
         </div>
 
-        {/* RIGHT */}
         <div className="product-card">
           <h2>July 2024</h2>
           <div className="text-box">
@@ -147,12 +149,11 @@ const DesignProcess: React.FC = () => {
       </section>
 
       {/* ===================== */}
-      {/* FEBRUARY 2025         */}
+      {/* FEBRUARY 2025 */}
       {/* ===================== */}
 
-      <section className="product-grid" id="feb2025">
+      <section className="product-grid" ref={febRef}>
 
-        {/* LEFT */}
         <div className="product-card">
           <h2>Cornell Assistive Tech</h2>
           <div className="product-image">
@@ -160,7 +161,6 @@ const DesignProcess: React.FC = () => {
           </div>
         </div>
 
-        {/* RIGHT */}
         <div className="product-card">
           <h2>February 2025</h2>
           <div className="text-box">
@@ -173,12 +173,11 @@ const DesignProcess: React.FC = () => {
       </section>
 
       {/* ===================== */}
-      {/* AUGUST 2025           */}
+      {/* AUGUST 2025 */}
       {/* ===================== */}
 
-      <section className="product-grid" id="aug2025">
+      <section className="product-grid" ref={augRef}>
 
-        {/* LEFT */}
         <div className="product-card">
           <h2>ISLAND Conference & NYPL</h2>
           <div className="product-image">
@@ -186,7 +185,6 @@ const DesignProcess: React.FC = () => {
           </div>
         </div>
 
-        {/* RIGHT */}
         <div className="product-card">
           <h2>August 2025</h2>
           <div className="text-box">
