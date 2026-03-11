@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/products.css';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 
 // Product images
@@ -9,7 +9,7 @@ import digitalBrailleGenerator from '../images/fusion.png';
 import autogen from '../images/autogen.png';
 
 const Products: React.FC = () => {
-  const navigate = useNavigate(); 
+  // const navigate = useNavigate(); 
   return (
     <div className="page">
 
