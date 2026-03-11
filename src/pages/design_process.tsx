@@ -6,6 +6,9 @@ import Epiq from "../images/epiq.jpg";
 import Island from "../images/island.jpg";
 import Assistive from "../images/assistive_tech.jpg";
 import Abacus from "../images/abacus_bee.jpg";
+import Microbit from "../images/microbitpic.png";
+import Teach from "../images/teach.png";
+import Resna from "../images/resnapic.png";
 
 const DesignProcess: React.FC = () => {
 
@@ -14,6 +17,10 @@ const DesignProcess: React.FC = () => {
   const julyRef = useRef<HTMLElement | null>(null);
   const febRef = useRef<HTMLElement | null>(null);
   const augRef = useRef<HTMLElement | null>(null);
+  const febTeachRef = useRef<HTMLElement | null>(null);
+  const aprilRef = useRef<HTMLElement | null>(null);
+  const decRef = useRef<HTMLElement | null>(null);
+
 
   const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
     ref.current?.scrollIntoView({
@@ -69,6 +76,24 @@ const DesignProcess: React.FC = () => {
             <div className="dot"></div>
             <p className="timeline-date">Aug 2025</p>
             <p className="timeline-label">ISLAND Conference & NYPL</p>
+          </div>
+
+          <div className="timeline-item" onClick={() => scrollToSection(decRef)}>
+            <div className="dot"></div>
+            <p className="timeline-date">Dec 2025</p>
+            <p className="timeline-label">Micro:Bit International Testing</p>
+          </div>
+
+          <div className="timeline-item" onClick={() => scrollToSection(febTeachRef)}>
+            <div className="dot"></div>
+            <p className="timeline-date">Feb 2025</p>
+            <p className="timeline-label">Teach Access Conference</p>
+          </div>
+
+          <div className="timeline-item" onClick={() => scrollToSection(aprilRef)}>
+            <div className="dot"></div>
+            <p className="timeline-date">April 2025</p>
+            <p className="timeline-label">RESNA Finalists</p>
           </div>
 
         </div>
@@ -190,6 +215,85 @@ const DesignProcess: React.FC = () => {
           <div className="text-box">
             <p>
               We began building the public website and forming partnerships while presenting at major accessibility conferences to expand reach and adoption.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      {/* ===================== */}
+      {/* DEC 2024 - JAN 2025 */}
+      {/* ===================== */}
+
+      <section className="product-grid" ref={decRef}>
+
+        <div className="product-card">
+          <h2>Micro:Bit International Testing</h2>
+          <div className="product-image">
+            <img src={Microbit} alt="Microbit Picture" />
+          </div>
+        </div>
+
+        <div className="product-card">
+          <h2>Dec 2025</h2>
+          <div className="text-box">
+            <p>
+              We collaborated with the Raspberry Pi Foundation to test our tactile
+              coding system with Micro:Bit Blockly environments. This international
+              testing phase explored how tactile blocks could integrate with existing
+              accessible coding platforms used by students worldwide.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      {/* ===================== */}
+      {/* FEBRUARY 2025 - TEACH ACCESS */}
+      {/* ===================== */}
+
+      <section className="product-grid" ref={febTeachRef}>
+
+        <div className="product-card">
+          <h2>Teach Access Conference</h2>
+          <div className="product-image">
+            <img src={Teach} alt="Teach Access Picture" />
+          </div>
+        </div>
+
+        <div className="product-card">
+          <h2>February 2025</h2>
+          <div className="text-box">
+            <p>
+              We presented our work at the Teach Access Conference, sharing our
+              tactile programming approach with accessibility researchers,
+              educators, and technology leaders focused on inclusive learning.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      {/* ===================== */}
+      {/* APRIL 2025 */}
+      {/* ===================== */}
+
+      <section className="product-grid" ref={aprilRef}>
+
+        <div className="product-card">
+          <h2>RESNA Student Design Finalists</h2>
+          <div className="product-image">
+            <img src={Resna} alt="RESNA" />
+          </div>
+        </div>
+
+        <div className="product-card">
+          <h2>April 2025</h2>
+          <div className="text-box">
+            <p>
+              Our project was selected as a finalist in the RESNA Student Design
+              Competition, recognizing our work in assistive technology and
+              accessible computing education.
             </p>
           </div>
         </div>

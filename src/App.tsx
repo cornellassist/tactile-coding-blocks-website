@@ -86,7 +86,7 @@ function App() {
             className={location.pathname === '/design-process' ? 'active' : ''}
             onClick={closeMenu}
           >
-            DESIGN PROCESS
+            TIMELINE
           </Link>
 
           <Link
