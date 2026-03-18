@@ -139,7 +139,7 @@ const MicrobitPage: React.FC = () => {
           <div className="premade-actions">
             
             <a 
-              href="/tactile-coding-blocks-website/doorbell_blocks.zip"
+              href="/doorbell_blocks.zip"
               className="action-btn"
               target="_blank"
             >
@@ -173,7 +173,7 @@ const MicrobitPage: React.FC = () => {
           <div className="premade-actions">
 
             <a 
-              href="/tactile-coding-blocks-website/shake_alarm_blocks.zip"
+              href="/shake_alarm_blocks.zip"
               className="action-btn"
               target="_blank"
             >
