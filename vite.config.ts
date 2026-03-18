@@ -3,5 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/tactile-coding-blocks-website/',
+  // App is served at the domain root: http://tactilecodingblocks.com/
+  base: '/',
 })
