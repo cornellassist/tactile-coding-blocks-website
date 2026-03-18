@@ -3,5 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/tactile-coding-blocks-website/',
+  // Custom domain is served from the site root.
+  base: '/',
 })
