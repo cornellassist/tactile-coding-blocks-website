@@ -1,0 +1,281 @@
+.download-page {
+  min-height: 100vh;
+  background: #fafafa;
+  padding: 40px 20px;
+}
+
+.download-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.download-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.download-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.download-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.download-card:hover {
+  border-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.download-card-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+
+.download-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.download-card-header {
+  background: #f8f8f8;
+  padding: 25px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.download-card-header h2 {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+}
+
+.download-card-body {
+  padding: 30px;
+}
+
+.download-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.download-specs {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.spec-item:last-child {
+  border-bottom: none;
+}
+
+.spec-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.spec-value {
+  color: #666;
+  font-size: 14px;
+}
+
+.includes-section {
+  margin: 25px 0;
+}
+
+.includes-section h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.includes-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.includes-section li {
+  padding: 6px 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 20px;
+}
+
+.includes-section li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2d5a27;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-download-file {
+  width: 100%;
+  background: #333;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.btn-download-file:hover {
+  background: #555;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-download-file:active {
+  transform: translateY(0);
+}
+
+.printing-info {
+  background: #f8f8f8;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.printing-info h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.info-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.info-section h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-section li {
+  padding: 8px 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 20px;
+}
+
+.info-section li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .download-page {
+    padding: 20px 10px;
+  }
+
+  .download-container {
+    padding: 20px;
+  }
+
+  .download-title {
+    font-size: 28px;
+  }
+
+  .download-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .download-grid {
+    gap: 20px;
+  }
+
+  .download-card-image {
+    height: 200px;
+  }
+
+  .download-card-header {
+    padding: 20px;
+  }
+
+  .download-card-header h2 {
+    font-size: 18px;
+  }
+
+  .download-card-body {
+    padding: 20px;
+  }
+
+  .printing-info {
+    padding: 25px 20px;
+  }
+
+  .info-content {
+    max-width: 100%;
+  }
+
+  .help-section {
+    padding: 25px 20px;
+  }
+}
