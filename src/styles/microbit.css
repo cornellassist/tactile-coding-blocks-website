@@ -172,6 +172,29 @@
   gap: 20px;
 }
 
+.download-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.download-row .action-btn {
+  /* Stretch to match the width of the sibling MakeCode button in this column. */
+  width: 100%;
+  min-width: 0;
+}
+
+.download-disclaimer {
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+  max-width: 320px;
+  text-align: center;
+}
+
 .action-btn {
   background: #8e1f1f;
   color: white;
