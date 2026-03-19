@@ -138,13 +138,18 @@ const MicrobitPage: React.FC = () => {
 
           <div className="premade-actions">
             
-            <a 
-              href="/doorbell_blocks.zip"
-              className="action-btn"
-              target="_blank"
-            >
-              Download Doorbell ZIP File
-            </a>
+            <div className="download-row">
+              <a
+                href="/doorbell_blocks.zip"
+                className="action-btn"
+                target="_blank"
+              >
+                Download Doorbell ZIP File
+              </a>
+              <span className="download-disclaimer">
+                Personal use only. No commercial use allowed.
+              </span>
+            </div>
 
             <a 
               href="https://makecode.microbit.org/39554-92625-62501-54261"
@@ -172,13 +177,18 @@ const MicrobitPage: React.FC = () => {
 
           <div className="premade-actions">
 
-            <a 
-              href="/shake_alarm_blocks.zip"
-              className="action-btn"
-              target="_blank"
-            >
-              Download Shake Alarm ZIP File
-            </a>
+            <div className="download-row">
+              <a
+                href="/shake_alarm_blocks.zip"
+                className="action-btn"
+                target="_blank"
+              >
+                Download Shake Alarm ZIP File
+              </a>
+              <span className="download-disclaimer">
+                Personal use only. No commercial use allowed.
+              </span>
+            </div>
 
             <a 
               href="https://makecode.microbit.org/S93931-92433-49899-05213"
