@@ -8,7 +8,7 @@ import CurrentDesign from './pages/current_design';
 import DesignProcess from './pages/design_process';
 import WhyUs from './pages/why_us';
 import ComingSoon from './pages/coming_soon';
-import MicrobitPage from './pages/microbit';
+import MicrobitPage from './pages/makecode';
 
 import './styles/global.css';
 import logo from './images/logo.jpg';
@@ -63,11 +63,11 @@ function App() {
 
             <div className="dropdown-menu">
               <Link
-                to="/products/microbit"
+                to="/products/makecode"
                 className="microbit-link"
                 onClick={closeMenu}
               >
-                micro:bit Blocks
+                MakeCode Blocks
               </Link>
             </div>
 
@@ -116,7 +116,7 @@ function App() {
         <Route path="/design-process" element={<DesignProcess />} />
         <Route path="/why-us" element={<WhyUs />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
-        <Route path="/products/microbit" element={<MicrobitPage />} />
+        <Route path="/products/makecode" element={<MicrobitPage />} />
       </Routes>
 
       {/* FOOTER */}

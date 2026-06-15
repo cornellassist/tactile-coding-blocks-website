@@ -3,9 +3,11 @@ import "../styles/microbit.css";
 import microbitLogo from "../images/microbitLogo.png";
 import doorbellImg from "../images/doorbell.png";
 import shakeAlarmImg from "../images/shakeAlarm.png";
+import startSoundImg from "../images/startSound.png";
 import sets from "../images/sets.png";
 import fusion from "../images/fusion.png";
 import editor from "../images/editor.png";
+
 
 
 const MicrobitPage: React.FC = () => {
@@ -30,10 +32,10 @@ const MicrobitPage: React.FC = () => {
       <section className="microbit-hero">
 
         <h1 className="hero-title">
-          micro:bit blocks
+          Microsoft MakeCode Blocks
           <img 
             src={microbitLogo} 
-            alt="micro:bit logo" 
+            alt="MakeCode logo" 
             className="microbit-logo"
           />
         </h1>
@@ -42,7 +44,7 @@ const MicrobitPage: React.FC = () => {
 
           {/* CARD 1 */}
           <div className="card">
-            <h3>Download Pre-Made micro:bit Sets</h3>
+            <h3>Download Pre-Made MakeCode Program Sets</h3>
 
             <a
               href="#premade"
@@ -57,7 +59,7 @@ const MicrobitPage: React.FC = () => {
 
             <img
               src={fusion}
-              alt="Pre-made microbit sets"
+              alt="Pre-made MakeCode sets"
               className="card-image"
             />
 
@@ -69,7 +71,7 @@ const MicrobitPage: React.FC = () => {
 
           {/* CARD 2 */}
           <div className="card">
-            <h3>Order micro:bit Block Kits</h3>
+            <h3>Order physical MakeCode Block Kits</h3>
 
             <a
               className="card-btn"
@@ -80,19 +82,19 @@ const MicrobitPage: React.FC = () => {
 
             <img
               src={sets}
-              alt="microbit kits"
+              alt="makecode kits"
               className="card-image"
             />
 
             <p>
-              Order physical micro:bit kits with the components you need for
+              Order physical MakeCode kits for micro:bit blocks with the components you need for
               hands-on learning, classroom use, or personal projects.
             </p>
           </div>
 
           {/* CARD 3 */}
           <div className="card">
-            <h3>Try micro:bit Block Editor</h3>
+            <h3>Try MakeCode Block Editor</h3>
 
 <a
               href="https://makecode.microbit.org/#editor"
@@ -121,13 +123,13 @@ const MicrobitPage: React.FC = () => {
       {/* PREMADE SETS */}
       <section className="premade-section" id="premade">
 
-        <h2>Pre-Made Sets</h2>
+        <h2>Pre-Made MakeCode Program Sets</h2>
 
         {/* DOORBELL */}
         <div className="premade-card">
 
           <div className="premade-left">
-            <h3>Doorbell</h3>
+            <h3>Doorbell program</h3>
 
             <img
               src={doorbellImg}
@@ -144,7 +146,7 @@ const MicrobitPage: React.FC = () => {
                 className="action-btn"
                 target="_blank"
               >
-                Download Doorbell ZIP File
+                Download Doorbell program ZIP File
               </a>
               <span className="download-disclaimer">
                 Personal use only. No commercial use allowed.
@@ -152,11 +154,11 @@ const MicrobitPage: React.FC = () => {
             </div>
 
             <a 
-              href="https://makecode.microbit.org/39554-92625-62501-54261"
+              href="https://makecode.microbit.org/S96517-87655-58408-89888"
               className="action-btn"
               target="_blank"
             >
-              MakeCode Demo
+              Open program in MakeCode
             </a>
 
           </div>
@@ -166,7 +168,7 @@ const MicrobitPage: React.FC = () => {
         <div className="premade-card">
 
           <div className="premade-left">
-            <h3>Shake Alarm</h3>
+            <h3>Shake alarm program</h3>
 
             <img
               src={shakeAlarmImg}
@@ -183,7 +185,7 @@ const MicrobitPage: React.FC = () => {
                 className="action-btn"
                 target="_blank"
               >
-                Download Shake Alarm ZIP File
+                Download Shake alarm program ZIP File
               </a>
               <span className="download-disclaimer">
                 Personal use only. No commercial use allowed.
@@ -191,16 +193,68 @@ const MicrobitPage: React.FC = () => {
             </div>
 
             <a 
-              href="https://makecode.microbit.org/S93931-92433-49899-05213"
+              href="https://makecode.microbit.org/S01644-42538-29964-54980"
               className="action-btn"
               target="_blank"
             >
-              MakeCode Demo
+              Open program in MakeCode
             </a>
 
           </div>
         </div>
 
+        <div className="premade-card">
+          {/* START SOUND */}
+          <div className="premade-left">
+            <h3>Start sound program</h3>
+
+            <img
+              src={startSoundImg}           
+              alt="Start sound blocks"
+              className="premade-image"
+            />
+          </div>
+
+          <div className="premade-actions">
+
+            <div className="download-row">
+              <a
+                href="/start_sound_blocks.zip" 
+                className="action-btn"
+                target="_blank"
+              >
+                Download Start sound program ZIP File
+              </a>
+              <span className="download-disclaimer">
+                Personal use only. No commercial use allowed.
+              </span>
+            </div>
+
+            <a
+              href="https://makecode.microbit.org/S07721-59216-14601-19555" 
+              className="action-btn"
+              target="_blank"
+            >
+              Open program in MakeCode
+            </a>
+
+          </div>
+        </div>
+
+      </section>
+      
+      {/* Kudos to Micro:Bit Accessibility */}
+      <section className="micro:bit-kudos"> 
+        <p>
+          Find additional screen-reader based accessibility resources at{" "}
+          <a
+            href="https://microbit.org/accessibility/makecode-screenreader"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            microbit.org/accessibility/makecode-screenreader
+          </a>
+        </p>
       </section>
 
     </div>
