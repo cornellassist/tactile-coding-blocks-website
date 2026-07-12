@@ -86,14 +86,14 @@ const DesignProcess: React.FC = () => {
 
           <div className="timeline-item" onClick={() => scrollToSection(febTeachRef)}>
             <div className="dot"></div>
-            <p className="timeline-date">Feb 2025</p>
+            <p className="timeline-date">Feb 2026</p>
             <p className="timeline-label">Teach Access Student Academy Conference</p>
           </div>
 
           <div className="timeline-item" onClick={() => scrollToSection(aprilRef)}>
             <div className="dot"></div>
-            <p className="timeline-date">April 2025</p>
-            <p className="timeline-label">RESNA Finalists</p>
+            <p className="timeline-date">April 2026</p>
+            <p className="timeline-label">RESNA Competition</p>
           </div>
 
         </div>
