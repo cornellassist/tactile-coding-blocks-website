@@ -87,7 +87,7 @@ const DesignProcess: React.FC = () => {
           <div className="timeline-item" onClick={() => scrollToSection(febTeachRef)}>
             <div className="dot"></div>
             <p className="timeline-date">Feb 2025</p>
-            <p className="timeline-label">Teach Access Conference</p>
+            <p className="timeline-label">Teach Access Student Academy Conference</p>
           </div>
 
           <div className="timeline-item" onClick={() => scrollToSection(aprilRef)}>
@@ -249,52 +249,67 @@ const DesignProcess: React.FC = () => {
       </section>
 
       {/* ===================== */}
-      {/* FEBRUARY 2025 - TEACH ACCESS */}
+      {/* FEBRUARY 2026 - TEACH ACCESS */}
       {/* ===================== */}
 
       <section className="product-grid" ref={febTeachRef}>
 
         <div className="product-card">
-          <h2>Teach Access Conference</h2>
-          <div className="product-image">
-            <img src={Teach} alt="Teach Access Picture" />
-          </div>
+          <h2>Teach Access Student Academy Conference</h2>
+            <div className="product-image">
+              <img src={Teach} alt="Teach Access Logo" />
+            </div>
         </div>
 
         <div className="product-card">
-          <h2>February 2025</h2>
-          <div className="text-box">
-            <p>
-              We presented our work at the Teach Access Conference, sharing our
-              tactile programming approach with accessibility researchers,
-              educators, and technology leaders focused on inclusive learning.
-            </p>
+        <h2>February 2026</h2>
+        <div className="text-box">
+          <p>
+            We presented our work at the Teach Access Student Academy, sharing our
+            work with accessibility researchers, students, educators, and technology leaders focused on inclusive learning.
+          </p>
+            <a
+              href="https://www.youtube.com/watch?v=dHbV2fi1qdg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="action-btn"
+            >
+              ▶ Watch Presentation
+            </a>
           </div>
         </div>
 
       </section>
 
       {/* ===================== */}
-      {/* APRIL 2025 */}
+      {/* APRIL 2026 */}
       {/* ===================== */}
 
       <section className="product-grid" ref={aprilRef}>
 
         <div className="product-card">
-          <h2>RESNA Student Design Finalists</h2>
+          <h2>RESNA Student Design Challenge: 2nd Place</h2>
           <div className="product-image">
             <img src={Resna} alt="RESNA" />
           </div>
         </div>
 
         <div className="product-card">
-          <h2>April 2025</h2>
+        <h2>April 2026</h2>
           <div className="text-box">
             <p>
-              Our project was selected as a finalist in the RESNA Student Design
+              Our project won 2nd Place at the RESNA Student Design Challenge
               Competition, recognizing our work in assistive technology and
               accessible computing education.
             </p>
+            <a
+              href="https://www.resna.org/Events/RESNA-2026-Conference-Information/New-York-Metro/2026-RESNA-Student-Design-Challenge-Winners-Finalists"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="action-btn"
+            >
+              🏆 View RESNA Finalists
+            </a>
           </div>
         </div>
 

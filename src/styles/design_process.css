@@ -136,6 +136,13 @@
   border: 1px solid rgba(0,0,0,0.06);
 }
 
+/* button */
+.text-box .action-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: rgb(224, 221, 221); 
+}
+
 /* titles */
 
 .product-card h2 {
