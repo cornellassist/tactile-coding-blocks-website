@@ -1,0 +1,414 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  min-height: calc(100vh - 80px);
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+}
+
+.breadcrumb-link {
+  background: #333;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.breadcrumb-link:hover {
+  background: #555;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.flex-box {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.image-placeholder {
+  min-width: 300px;
+  height: 300px;
+  background: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px dashed #ccc;
+}
+
+.image-container {
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.form-section {
+  flex: 1;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.checkbox-label {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.checkbox-label:hover {
+  background: #f8f8f8;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin: 3px 0 0 0;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.checkbox-label > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.checkbox-label span {
+  font-weight: 500;
+}
+
+.addon-description {
+  font-size: 14px;
+  color: #666;
+}
+
+select, input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+select:focus, input:focus, textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.help-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background: #333;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background: #555;
+}
+
+.btn-primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-primary.loading {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.btn-secondary {
+  background: #333;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #555;
+}
+
+.donation-section {
+  text-align: center;
+  padding: 30px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.donation-section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.donation-input {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.donation-field {
+  width: 120px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+.donation-input .btn-secondary {
+  padding: 12px 24px;
+  margin: 0;
+  height: auto;
+}
+
+.donation-display {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2d5a27;
+  font-size: 16px;
+}
+
+.summary {
+  flex: 1;
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.summary h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.order-item h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.order-details p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.donation-summary {
+  background: #e8f5e8;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.donation-summary h3 {
+  color: #2d5a27;
+  margin-bottom: 5px;
+}
+
+.shipping-section h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.shipping-info {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.shipping-option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.shipping-option:hover {
+  border-color: #ccc;
+}
+
+.shipping-option input[type="radio"] {
+  margin-right: 15px;
+  width: auto;
+}
+
+.shipping-details {
+  flex: 1;
+}
+
+.shipping-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.carrier {
+  font-weight: 600;
+  color: #333;
+}
+
+.cost {
+  font-weight: 600;
+  color: #2d5a27;
+  font-size: 16px;
+}
+
+.shipping-delivery {
+  font-size: 14px;
+  color: #666;
+}
+
+.total-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.total-section h3 {
+  color: #2d5a27;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.total-breakdown p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.terms-label {
+  align-items: center !important;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.terms-link {
+  color: #666;
+  text-decoration: underline;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .flex-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .image-placeholder {
+    min-width: auto;
+    height: 200px;
+  }
+
+  .image-container {
+    min-width: auto;
+    max-width: 100%;
+  }
+  
+  .container {
+    padding: 15px;
+  }
+  
+  .donation-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .donation-field {
+    width: 150px;
+  }
+  
+  .shipping-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
